@@ -12,6 +12,7 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+    <!-- Div padrão onde recebe as outra paginas  -->
     <div id='principal'>
         <h1 class='titulo'>Agenda Barbearia</h1> 
         <?php
@@ -24,22 +25,31 @@
             }
             
         ?>
-        <button class='button' onclick='print()' type="submit">
-            <?php 
-                $link = "";
-                if(isset($_GET['pg'])){
-                   $pag = $_GET['pg']; 
-                   if($pag == "usuario"){
-                       $link = "index.php?pg=calendario";
-                   }
-                }else{
-                    $link = "index.php?pg=usuario";
-                }
-            ?>
+        
+        <!-- Verficação da pagina em questão 
+        para que o botão possa avançar para pagina seguinte-->
+        <?php 
+            $link = "";
+            if(isset($_GET['pg'])){
+            $pag = $_GET['pg']; 
+            if($pag == "usuario"){
+                $link = "index.php?pg=calendario";
+            }
+            }else{
+                $link = "index.php?pg=usuario";
+            }
+        ?>
 
-            <a href="<?php echo $link ?>">>>></a>
+            <!-- Um simples botao 
+            que recebe no href um novo link toda vez que é clicado
+            a partir da verificaçao a cima -->
+        <a href="<?php echo $link ?>">
+            <button class='button' onclick='print()' type="submit">
+                >>>
+            </button>
+        </a>
             
-        </button>
+        
     </div>
 </body>
 </html>
