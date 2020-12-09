@@ -2,15 +2,15 @@
 <form action="index.php?pg=calendario" method="post">
     <div class='container'>
         <label class='texto' for="nome">Nome</label>
-        <input class='row' type="text" name="nome" id="nome">
+        <input class='row inputPadrao' type="text" name="nome" id="nome">
     </div>
     <div class='container'>
         <label class='texto' for="Email">Email</label>
-        <input class='row' type="email" name="email" id="email">
+        <input class='row inputPadrao' type="email" name="email" id="email">
     </div>
     <div class='container'>
         <label class='texto' for="Tel">Telefone</label>
-        <input class='row' type="tel" name="tel" id="tel">
+        <input class='row inputPadrao' type="tel" name="tel" id="tel">
     </div>
 
     

@@ -7,7 +7,7 @@ div#principal{
     background-image: linear-gradient(to bottom right, rgba(16, 49, 194, 0.8), rgb(54, 146, 233,0.7));
     width: 500px;
     min-height: 150px;
-    max-height: 370px;
+    max-height: 500px;
     position: absolute;
     top: 50%;
     margin-top: -200px;
@@ -17,9 +17,10 @@ div#principal{
     border-radius: 20px 60px;
     text-align: center;
     padding-bottom: 10px;
+
 }
 
-div#principal button{
+.HomeButton{
     margin-top: 20px;
     text-align: center;
     border-radius: 40%;
@@ -31,13 +32,13 @@ div#principal button{
     background-color: rgba(18, 109, 109, 0.705);
     transition: 0.5s;
 }
-div#principal button:hover{
+.HomeButton:hover{
     color: rgb(0, 0, 0);
     background-color: rgba(21, 216, 53, 0.692);
     font-size: 140%;
 }
 
-div#principal input{
+.inputPadrao{
     width: 400px;
     height: 25px;
     margin-left: auto;

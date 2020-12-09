@@ -44,11 +44,14 @@
             que recebe no href um novo link toda vez que é clicado
             a partir da verificaçao a cima -->
         <a href="<?php echo $link ?>">
-            <button class='button' onclick='print()' type="submit">
+            <button class='HomeButton' onclick='print()' type="submit">
                 >>>
             </button>
-        </a>
             
+        </a>
+            <?php 
+                
+            ?>
         
     </div>
 </body>
